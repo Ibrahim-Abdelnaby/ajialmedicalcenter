@@ -1,0 +1,36 @@
+/* ==================== Variables ==================== */
+:root {
+  --primary-color: #c8499a;
+  --secondary-color: #231c48;
+  /* Fonts */
+  --default-font: "Cairo", sans-serif;
+}
+/* ==================== Scrollbar ==================== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  transition: 0.3s ease-out;
+  cursor: grab;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+::-webkit-scrollbar-thumb:active {
+  cursor: grabbing;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b3448a;
+}
+/* ==================== Body ==================== */
+body {
+  font-family: var(--default-font);
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--primary-color);
+  font-weight: 600;
+}
