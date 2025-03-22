@@ -20,34 +20,95 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- ==================== Start Navbar ==================== -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <!-- Top Banner -->
+    <div id="top-banner">
       <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html"
-          ><img src="/images/Ajial_Logo.svg" alt="شعار مركز أجيال الطبي"
-        /></a>
-        <!-- Responsive Burger Menu -->
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+            <!-- Location -->
+            <address>
+              <i class="fa-solid fa-location-dot fa-lg ml-2"></i>
+              <a
+                href="https://maps.app.goo.gl/x7R77cqoWQ1BpTH66"
+                aria-label="عنوان مركز أجيال الطبي علي الخريطة"
+                target="_blank"
+                >هشام بن عبد الملك، حي الملك فهد، الرياض</a
+              >
+            </address>
+          </div>
+          <div class="col-md-4 text-center">
+            <!-- Working Hours -->
+            <p>
+              <i class="fa-solid fa-clock fa-lg ml-2"></i> من السبت إلي الخميس -
+              من 10 صباحاً حتي 10 مساءً
+            </p>
+          </div>
+          <div class="col-md-4 text-end">
+            <!-- Social Links -->
+            <div class="social d-flex gap-3 justify-content-end">
+              <!-- Instagram Account -->
+              <a
+                href="https://www.instagram.com/ajialmedicalcenter2"
+                aria-label="حسابنا علي انستقرام"
+                target="_blank"
+                ><i class="fa-brands fa-instagram fa-lg"></i
+              ></a>
+              <!-- Facebook Account -->
+              <a
+                href="https://www.facebook.com/ajialclinic"
+                aria-label="حسابنا الرسمي علي فيسبوك"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f fa-lg"></i
+              ></a>
+              <!-- Telegram Number -->
+              <a
+                href="https://t.me/ajyalmariam"
+                aria-label="رقم التواصل علي تلجرام"
+                target="_blank"
+                ><i class="fa-brands fa-telegram fa-lg"></i
+              ></a>
+              <!-- X Account -->
+              <a
+                href="https://x.com/ajialcenter"
+                aria-label="حسابنا علي اكس/تويتر "
+                target="_blank"
+                ><i class="fa-brands fa-x-twitter fa-lg"></i
+              ></a>
+              <!-- Tiktok Account -->
+              <a
+                href="https://www.tiktok.com/@ajialmedicalcenter"
+                aria-label="حسابنا علي تيكتوك"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok fa-lg"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fixed Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/images/Ajial_Logo.svg" alt="شعار المركز" height="40" />
+        </a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-target="#navbarNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Menu Links -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >الرئيسية</a
-              >
+              <a class="nav-link active" href="#">الرئيسية</a>
             </li>
-
+            <!-- Start Dropdown -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -56,117 +117,195 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                خدماتنا
+                الخدمات
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">خدمات الوجه</a></li>
-                <li><a class="dropdown-item" href="#">خدمات الشعر</a></li>
-                <li><a class="dropdown-item" href="#">خدمات الجسم</a></li>
+                <li><a class="dropdown-item" href="#">خدمات تجميل الوجه</a></li>
+                <li><a class="dropdown-item" href="#">خدمات تجميل الشعر</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">خدمات تجميل الاسنان</a>
+                </li>
+                <li><a class="dropdown-item" href="#">خدمات تجميل الجسم</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">خدمات تجميل الرجال</a>
+                </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">الأطباء</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">الأجهزة</a>
-            </li>
+            <!-- End Dropdown -->
+            <li class="nav-item"><a class="nav-link" href="#">الاطباء</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">الاجهزة</a></li>
             <li class="nav-item">
               <a class="nav-link" href="#">آراء العملاء</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">من نحن</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">تواصل معنا</a>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">اتصل بنا</a></li>
           </ul>
+          <button
+            class="btn btn-primary rounded-5 py-2 px-4 d-flex justify-content-center align-items-center"
+            onclick="showBookingModal()"
+          >
+            <i class="fa-solid fa-calendar-days fa-md ml-2"></i> حجز موعد
+          </button>
         </div>
-        <!-- CTA Button -->
-        <button class="btn btn-primary">حجز موعد</button>
       </div>
     </nav>
-    <!-- ==================== Start Hero ==================== -->
-    <section id="hero">
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide h-100"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner h-100">
-          <div class="carousel-item active h-100">
-            <img
-              src="/images/card-1.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="..."
+
+    <!-- Hero Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#mainCarousel"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Repeat this block 6 times with different images -->
+        <div class="carousel-item active">
+          <picture>
+            <!-- Mobile image -->
+            <source
+              media="(max-width: 767px)"
+              srcset="/images/image_fx_ (3).jpg"
             />
-            <div
-              class="carousel-caption d-none d-md-block h-100 d-flex justify-content-center align-content-center"
-            >
-              <div class="wrapper">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active h-100">
-            <img
-              src="/images/card-2.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-none d-md-block h-100 d-flex justify-content-center align-content-center"
-            >
-              <div class="wrapper">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active h-100">
-            <img
-              src="/images/card-3.jpg"
-              class="d-block w-100 h-100 object-fit-cover"
-              alt="..."
-            />
-            <div
-              class="carousel-caption d-none d-md-block h-100 d-flex justify-content-center align-content-center"
-            >
-              <div class="wrapper">
-                <h5>First slide label</h5>
-                <p>
-                  Some representative placeholder content for the first slide.
-                </p>
-              </div>
+            <!-- Desktop image -->
+            <img src="/images/card-1.jpg" alt="صورة ١" class="d-block w-100" />
+          </picture>
+          <div
+            class="carousel-caption h-100 w-100 container text-start d-flex align-items-center"
+          >
+            <div class="wrap">
+              <h3>الرعاية الصحية المتكاملة</h3>
+              <p>نقدم أفضل الخدمات الطبية بأعلى معايير الجودة</p>
+              <button class="btn btn-primary" onclick="showBookingModal()">
+                حجز موعد
+              </button>
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <picture>
+            <!-- Mobile image -->
+            <source
+              media="(max-width: 767px)"
+              srcset="/images/image_fx_ (3).jpg"
+            />
+            <!-- Desktop image -->
+            <img src="/images/card-2.jpg" alt="صورة ١" class="d-block w-100" />
+          </picture>
+          <div
+            class="carousel-caption h-100 w-100 container text-start d-flex align-items-center"
+          >
+            <div class="wrap">
+              <h3>الرعاية الصحية المتكاملة</h3>
+              <p>نقدم أفضل الخدمات الطبية بأعلى معايير الجودة</p>
+              <button class="btn btn-primary" onclick="showBookingModal()">
+                حجز موعد
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <picture>
+            <!-- Mobile image -->
+            <source
+              media="(max-width: 767px)"
+              srcset="/images/image_fx_ (3).jpg"
+            />
+            <!-- Desktop image -->
+            <img src="/images/card-3.jpg" alt="صورة ١" class="d-block w-100" />
+          </picture>
+          <div
+            class="carousel-caption h-100 w-100 container text-start d-flex align-items-center"
+          >
+            <div class="wrap">
+              <h3>الرعاية الصحية المتكاملة</h3>
+              <p>نقدم أفضل الخدمات الطبية بأعلى معايير الجودة</p>
+              <button class="btn btn-primary" onclick="showBookingModal()">
+                حجز موعد
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <!-- ==================== End Hero ==================== -->
-    <!-- ==================== End Navbar ==================== -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#mainCarousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">حجز موعد</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="bookingForm">
+              <div class="mb-3">
+                <label class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">رقم الجوال</label>
+                <input type="tel" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">نوع الخدمة</label>
+                <select class="form-select" required>
+                  <option value="استشارة">استشارة</option>
+                  <option value="فحص دوري">فحص دوري</option>
+                  <option value="علاج">علاج</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">ملاحظات</label>
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                تأكيد الحجز
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ==================== Bootstrap ==================== -->
     <script src="/js/bootstrap.bundle.min.js"></script>
     <!-- ==================== Main JavaScript ==================== -->
